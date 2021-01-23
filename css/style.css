@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.osnova .header {
+  width: 100%;
+  min-height: 100%;
+  height: 1080px;
+  background-image: url(/img/BG-Header.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.osnova .header .binary {
+  width: 100%;
+  text-align: center;
+  margin-top: 170px;
+}
+
+.osnova .header .infa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 160px;
+}
+
+.osnova .header .infa .p1 {
+  font-size: 64px;
+  font-family: "Lato";
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.osnova .header .infa .p2 {
+  margin: 10px 0 40px;
+  font-size: 20px;
+  font-family: "Lato";
+  color: white;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.osnova .header .infa hr {
+  width: 80px;
+  background-color: white;
+  color: white;
+  height: 1px;
+  margin: auto;
+}
+
+.osnova .header .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-top: 230px;
+}
+
+.osnova .header .button .read {
+  width: 160px;
+  border: 1px solid white;
+  border-style: ridge;
+  color: white;
+  margin: auto;
+  font-size: 20px;
+  font-family: "Lato";
+  color: white;
+  padding: 10px 0;
+  letter-spacing: 1px;
+}
+
+.osnova .header .button .arrow {
+  margin: 70px auto 0;
+  width: 20px;
+  background-image: none;
+  background: transparent;
+}
+/*# sourceMappingURL=style.css.map */
