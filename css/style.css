@@ -84,6 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 10px;
 }
 
 .osnova .header .binary {
@@ -159,5 +160,188 @@ h1, h2, h3, h4, h5, h6 {
   width: 20px;
   background-image: none;
   background: transparent;
+}
+
+.osnova .about {
+  min-height: 100%;
+  width: 100%;
+  height: 970px;
+}
+
+.osnova .about .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 40px auto;
+  width: 35%;
+}
+
+.osnova .about .tabs a {
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-family: "Lato";
+  font-weight: bold;
+}
+
+.osnova .about .tabs a:hover {
+  color: #ada074;
+}
+
+.osnova .about .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  margin: 150px auto;
+  text-align: center;
+}
+
+.osnova .about .text h1 {
+  font-size: 56px;
+  font-family: "Lato";
+  color: black;
+  font-weight: bold;
+}
+
+.osnova .about .text hr {
+  width: 95px;
+  background-color: black;
+  color: black;
+  height: 1px;
+  margin: 25px auto;
+}
+
+.osnova .about .text p {
+  font-size: 17px;
+  font-family: "Lato";
+  color: #523434;
+  margin: 8px 0;
+}
+
+.osnova .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 60%;
+  margin: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.osnova .content .web {
+  width: 350px;
+  padding: 10px 40px;
+  text-align: center;
+}
+
+.osnova .content .web .img {
+  border: 1px solid #868585;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  line-height: 80px;
+  -webkit-box-shadow: 0 0 3px #868585;
+          box-shadow: 0 0 3px #868585;
+}
+
+.osnova .content .web .img img {
+  vertical-align: middle;
+}
+
+.osnova .content .web h1 {
+  margin: 30px 0;
+  font-size: 27px;
+  font-family: "Lato";
+  color: black;
+}
+
+.osnova .content .web p {
+  font-size: 17px;
+  font-family: "Lato";
+  color: #868585;
+  line-height: 20px;
+}
+
+.osnova .content .ios {
+  width: 350px;
+  padding: 10px 40px;
+  text-align: center;
+}
+
+.osnova .content .ios .img {
+  border: 1px solid #868585;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  line-height: 80px;
+  -webkit-box-shadow: 0 0 3px #868585;
+          box-shadow: 0 0 3px #868585;
+}
+
+.osnova .content .ios .img img {
+  vertical-align: middle;
+}
+
+.osnova .content .ios h1 {
+  margin: 30px 0;
+  font-size: 27px;
+  font-family: "Lato";
+  color: black;
+}
+
+.osnova .content .ios p {
+  font-size: 17px;
+  font-family: "Lato";
+  color: #868585;
+  line-height: 20px;
+}
+
+.osnova .content .marketing {
+  width: 350px;
+  padding: 10px 40px;
+  text-align: center;
+}
+
+.osnova .content .marketing .img {
+  border: 1px solid #868585;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  line-height: 80px;
+  -webkit-box-shadow: 0 0 3px #868585;
+          box-shadow: 0 0 3px #868585;
+}
+
+.osnova .content .marketing .img img {
+  vertical-align: middle;
+}
+
+.osnova .content .marketing h1 {
+  margin: 30px 0;
+  font-size: 27px;
+  font-family: "Lato";
+  color: black;
+}
+
+.osnova .content .marketing p {
+  font-size: 17px;
+  font-family: "Lato";
+  color: #868585;
+  line-height: 20px;
 }
 /*# sourceMappingURL=style.css.map */
