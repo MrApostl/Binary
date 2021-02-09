@@ -1,88 +1,95 @@
 @import "_nullstyle";
-.osnova {
-  .header{
-    width: 100%;
-    min-height: 100%;
-    height: 1080px;
+.wrapper {
+  header{
     background-image: url(../img/BG-Header.png);
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    .binary{
-      width: 100%;
-      text-align: center;
-      margin-top: 170px;
-    }
-    .infa{
+    .header{
+      max-width: 1100px;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
-      .p1{
-        font-size: 64px;
-        font-family: "Lato";
-        color: rgb(255, 255, 255);
-        text-transform: uppercase;
-        text-align: center;
-        letter-spacing: 3px;
-      }
-      .p2{
-        margin: 10px 0 40px;
-        font-size: 20px;
-        font-family: "Lato";
-        color: rgb(255, 255, 255);
-        text-align: center;
-        letter-spacing: 3px;
-      }
-      hr{
-        width:80px;
-        background-color: rgb(255, 255, 255);
-        color: rgb(255, 255, 255);
-        height: 1px; 
+      align-items: center;
+      margin: 0 auto;
+      .binary{
+        width: 60%;
         margin: auto;
+        text-align: center;
+        margin-bottom: -2px;
       }
-      margin-top: 160px;
-    }
-    .button{
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      margin-top: 230px;
-      .read{
-        width: 160px;
-        border: 1px solid rgb(255, 255, 255);
-        border-style: ridge;
-        color: rgb(255, 255, 255);
+      .infa{
+        display: flex;
+        flex-direction: column;
         margin: auto;
-        font-size: 20px;
-        font-family: "Lato";
-        color: rgb(255, 255, 255);  
-        padding: 10px 0; 
-        letter-spacing: 1px;
+        width: 80%;
+        .p1{
+          font-size: 50px;
+          font-family: "Lato";
+          color: rgb(255, 255, 255);
+          text-transform: uppercase;
+          text-align: center;
+          letter-spacing: 3px;
+        }
+        .p2{
+          margin: 10px 0 40px;
+          font-size: 20px;
+          font-family: "Lato";
+          color: rgb(255, 255, 255);
+          text-align: center;
+          letter-spacing: 3px;
+        }
+        hr{
+          width:80px;
+          background-color: rgb(255, 255, 255);
+          color: rgb(255, 255, 255);
+          height: 1px; 
+          margin: auto;
+        }
+        //margin-top: 140px;
       }
-      .arrow{
-        margin: 70px auto 0;
-        width: 20px;
-        background-image: none; 
-        background: transparent;
+      .button{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        //margin-top: 230px;
+
+        .read{
+          width: 160px;
+          border: 1px solid rgb(255, 255, 255);
+          border-style: ridge;
+          color: rgb(255, 255, 255);
+          margin: auto;
+          font-size: 20px;
+          font-family: "Lato";
+          color: rgb(255, 255, 255);  
+          padding: 10px 0; 
+          letter-spacing: 1px;
+        }
+        .arrow{
+          margin: 70px auto 10px;
+          width: 20px;
+          background-image: none; 
+          background: transparent;
+        }
       }
     }
   }
   .about{
-    min-height: 100%;
-    width: 100%;
-    height: 970px;
+    max-width: 1100px;
+    height: 100%;
+    margin: 10px auto;
     .tabs{
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
-      margin: 40px auto;
-      width: 35%;
+      margin: auto;
+      width: 50%;
         a{
           padding: 5px;
           text-decoration: none;
           color: black;
-          font-size: 25px;
+          font-size: 30px;
           font-family: "Lato";
           font-weight: bold;
+          
         }
         a:hover{
           color: rgb(173, 160, 116);
@@ -92,7 +99,7 @@
     .text{
       display: flex;
       flex-direction: column;
-      width: 60%;
+      max-width: 70%;
       margin: 150px auto;
       text-align: center;
       h1{
@@ -100,6 +107,7 @@
         font-family: "Lato";
         color: rgb(0, 0, 0);
         font-weight: bold;
+        letter-spacing: 7px;
         }
       hr{
         width:95px;
@@ -116,15 +124,14 @@
 
       }
     }
-  }
   .content{
     display: flex;
     flex-wrap: wrap;
-    width: 60%;
+    max-width: 100%;
     margin: auto;
     justify-content: space-around;
     .web{
-      width: 350px;
+      max-width: 285px;
       padding: 10px 40px;
       text-align: center;
       margin-bottom: 45px;
@@ -154,7 +161,7 @@
       }
     }
     .ios{
-      width: 350px;
+      max-width: 285px;
       padding: 10px 40px;
       text-align: center;
       margin-bottom: 45px;
@@ -184,7 +191,7 @@
       }
     }
     .marketing{
-      width: 350px;
+      max-width: 285px;
       padding: 10px 40px;
       text-align: center;
       margin-bottom: 45px;
@@ -212,6 +219,359 @@
         color: rgb(134, 133, 133);
         line-height: 20px;
       }
+    }
+  }
+  }
+  .portfolio-wrapper{
+    background-color: rgb(243,243,243);
+    .portfolio{
+      max-width: 1100px;
+      margin: 0 auto;
+      padding-top: 1px;
+      .text{
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+        margin: 80px auto 80px;
+        text-align: center;
+        h1{
+          font-size: 56px;
+          font-family: "Lato";
+          color: rgb(0, 0, 0);
+          font-weight: bold;
+          letter-spacing: 7px;
+          }
+        hr{
+          width:95px;
+          background-color: rgb(0, 0, 0);
+          color: rgb(0, 0, 0);
+          height: 1px; 
+          margin: 25px auto;
+        }
+        .tabs{
+          display: flex;
+          justify-content: space-between;
+          width: 300px;
+          margin: auto;
+          a{
+            font-size: 17px;
+            font-family: "Lato";
+            color: black;
+            margin: 8px 0;  
+          }
+          a:hover{
+            color: rgb(141, 110, 110);
+          }
+        }
+      }
+      .slider-container{
+        margin: auto;
+        position: relative;
+        padding-bottom: 46.5%;
+        
+        .slider-items{
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          -webkit-animation-name: fade;
+          animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+          img{
+            height: 100%;
+            width: 100%;
+          }
+          @-webkit-keyframes fade{
+            from{ opacity: .4;}
+            to{ opacity: 1;}
+          }
+          @keyframes fade{
+            from{ opacity: .4;}
+            to{opacity: 1;}
+          }
+        }
+        .slider-buttons{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          a{
+            color: rgb(255, 255, 255);
+            font-size: 40px;
+            margin: 10px;
+            cursor: pointer;
+            padding: 4px;
+            width: 30px;
+          }
+          a:hover{
+            background-color: rgb(0, 0, 0);
+            opacity: 0.4;
+            border-radius: 10px;
+          }
+        }
+      }
+      .button{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 0;
+        .read{
+          width: 160px;
+          border: 1px solid black;
+          //border-style: ridge;
+          margin: auto;
+          font-size: 20px;
+          font-family: "Lato";
+          padding: 10px 0; 
+          letter-spacing: 1px;
+          color: black;
+        }
+      }
+    }
+  }
+  .partners-wrapper{
+    background-image: url(../img/BG-Headercopy.png);
+    background-size: 100% 100%;
+    //background-repeat: no-repeat;
+    .partners{
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      //border: 1px solid red;
+      h1{
+        font-size: 40px;
+          font-family: "Lato";
+          color: rgb(255, 255, 255);
+        margin: 30px 0 0;
+      }
+      .icons{
+        display: flex;
+        width: 70%;
+        margin: 50px auto 90px;
+        justify-content: space-around;
+        //border: 1px solid red;
+        flex-wrap: wrap;
+        .w{
+          width: 65px;
+          height: 65px;
+        }
+        .a{
+          width: 75px;
+          height: 65px;
+        }
+        .al{
+          width: 155px;
+          height: 60px;
+        }
+        img{
+          padding: 5px 15px;
+          //border: 1px solid red;
+        }
+        
+      }
+    }
+  }
+  .contact{
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    margin: 200px auto 0;
+    
+    .text{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      h1{
+        font-size: 50px;
+        font-family: "Lato";
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        letter-spacing: 7px;
+      }
+      hr{
+        width:95px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(0, 0, 0);
+        height: 1px; 
+        margin: 25px auto;
+      }
+    }
+    .content{
+      display: flex;
+      justify-content: start;
+      margin: 60px 0 30px;
+      flex-wrap: wrap;
+      padding: 20px;
+      .form{
+        display: flex;
+        flex-direction: column;
+        width: 520px;
+        padding-right: 10px;
+        margin-right: 60px;
+        .name-email{
+          display: flex;
+          flex-direction: row;          
+          justify-content: space-between;
+          flex-wrap: wrap;
+          margin-bottom: 60px;
+          .name{
+            h1{
+              font-size: 20px;
+              font-family: "Lato";
+              color: rgb(0, 0, 0);
+              font-weight: bold;
+              letter-spacing: 1px;
+              margin: 10px 0;
+            }
+            input{
+              background-color: rgb(241, 238, 238);
+              width: 200px;
+              height: 35px;
+              border-top: 2px solid black;
+              font-size: 20px;
+            }
+          }
+          .email{
+            h1{
+              font-size: 20px;
+              font-family: "Lato";
+              color: rgb(0, 0, 0);
+              font-weight: bold;
+              letter-spacing: 1px;
+              margin: 10px 0;
+            }
+            input{
+              background-color: rgb(241, 238, 238);
+              width: 200px;
+              height: 35px;
+              border-top: 2px solid black;
+              font-size: 20px;
+            }
+          }
+      }
+      .message{
+        h1{
+          font-size: 20px;
+          font-family: "Lato";
+          color: rgb(0, 0, 0);
+          font-weight: bold;
+          letter-spacing: 1px;
+          margin: 10px 0;
+        }
+        #area{
+          background-color: rgb(241, 238, 238);
+          width: 100%;
+          height: 130px;
+          border-top: 2px solid black;
+          resize: none;
+          font-size: 20px;
+        }
+      }
+      .send{
+        font-size: 17px;
+        font-family: "Lato";
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-left: 90%;
+        background-color: white;
+        cursor: pointer;
+        margin-top: 40px;
+      }
+    }
+      .article{
+        
+        width: 350px;
+        padding: 3px;
+        .paragraph{
+          font-size: 17px;
+          font-family: "Lato";
+          color: rgb(0, 0, 0);
+          letter-spacing: 0.5px;
+        }
+        .author{
+          margin: 40px 0 30px;
+          font-size: 20px;
+        font-family: "Lato";
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        }
+        .icon{
+          width: 80px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-bottom: 15px;
+          .img{            
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 100%;
+            width: 30px;
+            height: 30px;
+            line-height: 80px;
+            box-shadow: 0 0 3px rgb(0, 0, 0);
+            img{
+              vertical-align: middle;
+              margin: 0 0 55px 8px;
+            }
+          }
+        }
+        .em{
+          font-size: 17px;
+          font-family: "Lato";
+          color: rgb(0, 0, 0);
+          span{
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  footer{
+    background-image: url(../img/Background.png);
+    background-size: 100% 100%;
+    .footer{
+      max-width: 1100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+      .binary{
+        width: 60%;
+        margin: 40px auto;
+        text-align: center;
+        img{
+          width: 150px;
+        }
+      }
+      .tabs{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 auto 20px;
+        width: 30%;
+          a{
+            padding: 5px;
+            text-decoration: none;
+            color: rgb(164, 164, 164);
+            font-size: 17px;
+            font-family: "Lato";
+            
+          }
+          a:hover{
+            color: rgb(221, 220, 218);
+            //transition: 0.5;
+          }
+        }
+        p{
+          color: rgb(100, 100, 100);
+          font-size: 16px;
+          font-family: "Lato";
+          margin-bottom: 50px;
+        }
     }
   }
 }

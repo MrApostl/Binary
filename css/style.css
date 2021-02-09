@@ -67,16 +67,22 @@ img {
   height: auto;
 }
 
+.hidden {
+  display: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: 400;
 }
 
-.osnova .header {
-  width: 100%;
-  min-height: 100%;
-  height: 1080px;
+.wrapper header {
   background-image: url(../img/BG-Header.png);
+}
+
+.wrapper header .header {
+  max-width: 1100px;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,16 +90,20 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
 }
 
-.osnova .header .binary {
-  width: 100%;
+.wrapper header .header .binary {
+  width: 60%;
+  margin: auto;
   text-align: center;
-  margin-top: 170px;
+  margin-bottom: -2px;
 }
 
-.osnova .header .infa {
+.wrapper header .header .infa {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,11 +111,12 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 160px;
+  margin: auto;
+  width: 80%;
 }
 
-.osnova .header .infa .p1 {
-  font-size: 64px;
+.wrapper header .header .infa .p1 {
+  font-size: 50px;
   font-family: "Lato";
   color: white;
   text-transform: uppercase;
@@ -113,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 3px;
 }
 
-.osnova .header .infa .p2 {
+.wrapper header .header .infa .p2 {
   margin: 10px 0 40px;
   font-size: 20px;
   font-family: "Lato";
@@ -122,7 +133,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 3px;
 }
 
-.osnova .header .infa hr {
+.wrapper header .header .infa hr {
   width: 80px;
   background-color: white;
   color: white;
@@ -130,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: auto;
 }
 
-.osnova .header .button {
+.wrapper header .header .button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,10 +150,9 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  margin-top: 230px;
 }
 
-.osnova .header .button .read {
+.wrapper header .header .button .read {
   width: 160px;
   border: 1px solid white;
   border-style: ridge;
@@ -155,20 +165,20 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
 }
 
-.osnova .header .button .arrow {
-  margin: 70px auto 0;
+.wrapper header .header .button .arrow {
+  margin: 70px auto 10px;
   width: 20px;
   background-image: none;
   background: transparent;
 }
 
-.osnova .about {
-  min-height: 100%;
-  width: 100%;
-  height: 970px;
+.wrapper .about {
+  max-width: 1100px;
+  height: 100%;
+  margin: 10px auto;
 }
 
-.osnova .about .tabs {
+.wrapper .about .tabs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,24 +186,24 @@ h1, h2, h3, h4, h5, h6 {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 40px auto;
-  width: 35%;
+  margin: auto;
+  width: 50%;
 }
 
-.osnova .about .tabs a {
+.wrapper .about .tabs a {
   padding: 5px;
   text-decoration: none;
   color: black;
-  font-size: 25px;
+  font-size: 30px;
   font-family: "Lato";
   font-weight: bold;
 }
 
-.osnova .about .tabs a:hover {
+.wrapper .about .tabs a:hover {
   color: #ada074;
 }
 
-.osnova .about .text {
+.wrapper .about .text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,19 +211,20 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 60%;
+  max-width: 70%;
   margin: 150px auto;
   text-align: center;
 }
 
-.osnova .about .text h1 {
+.wrapper .about .text h1 {
   font-size: 56px;
   font-family: "Lato";
   color: black;
   font-weight: bold;
+  letter-spacing: 7px;
 }
 
-.osnova .about .text hr {
+.wrapper .about .text hr {
   width: 95px;
   background-color: black;
   color: black;
@@ -221,33 +232,33 @@ h1, h2, h3, h4, h5, h6 {
   margin: 25px auto;
 }
 
-.osnova .about .text p {
+.wrapper .about .text p {
   font-size: 17px;
   font-family: "Lato";
   color: #523434;
   margin: 8px 0;
 }
 
-.osnova .content {
+.wrapper .about .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 60%;
+  max-width: 100%;
   margin: auto;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
-.osnova .content .web {
-  width: 350px;
+.wrapper .about .content .web {
+  max-width: 285px;
   padding: 10px 40px;
   text-align: center;
   margin-bottom: 45px;
 }
 
-.osnova .content .web .img {
+.wrapper .about .content .web .img {
   border: 1px solid #868585;
   border-radius: 100%;
   width: 80px;
@@ -258,32 +269,32 @@ h1, h2, h3, h4, h5, h6 {
           box-shadow: 0 0 3px #868585;
 }
 
-.osnova .content .web .img img {
+.wrapper .about .content .web .img img {
   vertical-align: middle;
 }
 
-.osnova .content .web h1 {
+.wrapper .about .content .web h1 {
   margin: 30px 0;
   font-size: 27px;
   font-family: "Lato";
   color: black;
 }
 
-.osnova .content .web p {
+.wrapper .about .content .web p {
   font-size: 17px;
   font-family: "Lato";
   color: #868585;
   line-height: 20px;
 }
 
-.osnova .content .ios {
-  width: 350px;
+.wrapper .about .content .ios {
+  max-width: 285px;
   padding: 10px 40px;
   text-align: center;
   margin-bottom: 45px;
 }
 
-.osnova .content .ios .img {
+.wrapper .about .content .ios .img {
   border: 1px solid #868585;
   border-radius: 100%;
   width: 80px;
@@ -294,32 +305,32 @@ h1, h2, h3, h4, h5, h6 {
           box-shadow: 0 0 3px #868585;
 }
 
-.osnova .content .ios .img img {
+.wrapper .about .content .ios .img img {
   vertical-align: middle;
 }
 
-.osnova .content .ios h1 {
+.wrapper .about .content .ios h1 {
   margin: 30px 0;
   font-size: 27px;
   font-family: "Lato";
   color: black;
 }
 
-.osnova .content .ios p {
+.wrapper .about .content .ios p {
   font-size: 17px;
   font-family: "Lato";
   color: #868585;
   line-height: 20px;
 }
 
-.osnova .content .marketing {
-  width: 350px;
+.wrapper .about .content .marketing {
+  max-width: 285px;
   padding: 10px 40px;
   text-align: center;
   margin-bottom: 45px;
 }
 
-.osnova .content .marketing .img {
+.wrapper .about .content .marketing .img {
   border: 1px solid #868585;
   border-radius: 100%;
   width: 80px;
@@ -330,21 +341,496 @@ h1, h2, h3, h4, h5, h6 {
           box-shadow: 0 0 3px #868585;
 }
 
-.osnova .content .marketing .img img {
+.wrapper .about .content .marketing .img img {
   vertical-align: middle;
 }
 
-.osnova .content .marketing h1 {
+.wrapper .about .content .marketing h1 {
   margin: 30px 0;
   font-size: 27px;
   font-family: "Lato";
   color: black;
 }
 
-.osnova .content .marketing p {
+.wrapper .about .content .marketing p {
   font-size: 17px;
   font-family: "Lato";
   color: #868585;
   line-height: 20px;
+}
+
+.wrapper .portfolio-wrapper {
+  background-color: #f3f3f3;
+}
+
+.wrapper .portfolio-wrapper .portfolio {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 1px;
+}
+
+.wrapper .portfolio-wrapper .portfolio .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 90%;
+  margin: 80px auto 80px;
+  text-align: center;
+}
+
+.wrapper .portfolio-wrapper .portfolio .text h1 {
+  font-size: 56px;
+  font-family: "Lato";
+  color: black;
+  font-weight: bold;
+  letter-spacing: 7px;
+}
+
+.wrapper .portfolio-wrapper .portfolio .text hr {
+  width: 95px;
+  background-color: black;
+  color: black;
+  height: 1px;
+  margin: 25px auto;
+}
+
+.wrapper .portfolio-wrapper .portfolio .text .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 300px;
+  margin: auto;
+}
+
+.wrapper .portfolio-wrapper .portfolio .text .tabs a {
+  font-size: 17px;
+  font-family: "Lato";
+  color: black;
+  margin: 8px 0;
+}
+
+.wrapper .portfolio-wrapper .portfolio .text .tabs a:hover {
+  color: #8d6e6e;
+}
+
+.wrapper .portfolio-wrapper .portfolio .slider-container {
+  margin: auto;
+  position: relative;
+  padding-bottom: 46.5%;
+}
+
+.wrapper .portfolio-wrapper .portfolio .slider-container .slider-items {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-animation-name: fade;
+  animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+.wrapper .portfolio-wrapper .portfolio .slider-container .slider-items img {
+  height: 100%;
+  width: 100%;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.wrapper .portfolio-wrapper .portfolio .slider-container .slider-buttons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .portfolio-wrapper .portfolio .slider-container .slider-buttons a {
+  color: white;
+  font-size: 40px;
+  margin: 10px;
+  cursor: pointer;
+  padding: 4px;
+  width: 30px;
+}
+
+.wrapper .portfolio-wrapper .portfolio .slider-container .slider-buttons a:hover {
+  background-color: black;
+  opacity: 0.4;
+  border-radius: 10px;
+}
+
+.wrapper .portfolio-wrapper .portfolio .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.wrapper .portfolio-wrapper .portfolio .button .read {
+  width: 160px;
+  border: 1px solid black;
+  margin: auto;
+  font-size: 20px;
+  font-family: "Lato";
+  padding: 10px 0;
+  letter-spacing: 1px;
+  color: black;
+}
+
+.wrapper .partners-wrapper {
+  background-image: url(../img/BG-Headercopy.png);
+  background-size: 100% 100%;
+}
+
+.wrapper .partners-wrapper .partners {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.wrapper .partners-wrapper .partners h1 {
+  font-size: 40px;
+  font-family: "Lato";
+  color: white;
+  margin: 30px 0 0;
+}
+
+.wrapper .partners-wrapper .partners .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  margin: 50px auto 90px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.wrapper .partners-wrapper .partners .icons .w {
+  width: 65px;
+  height: 65px;
+}
+
+.wrapper .partners-wrapper .partners .icons .a {
+  width: 75px;
+  height: 65px;
+}
+
+.wrapper .partners-wrapper .partners .icons .al {
+  width: 155px;
+  height: 60px;
+}
+
+.wrapper .partners-wrapper .partners .icons img {
+  padding: 5px 15px;
+}
+
+.wrapper .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1100px;
+  margin: 200px auto 0;
+}
+
+.wrapper .contact .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.wrapper .contact .text h1 {
+  font-size: 50px;
+  font-family: "Lato";
+  color: black;
+  font-weight: bold;
+  letter-spacing: 7px;
+}
+
+.wrapper .contact .text hr {
+  width: 95px;
+  background-color: black;
+  color: black;
+  height: 1px;
+  margin: 25px auto;
+}
+
+.wrapper .contact .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin: 60px 0 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px;
+}
+
+.wrapper .contact .content .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 520px;
+  padding-right: 10px;
+  margin-right: 60px;
+}
+
+.wrapper .contact .content .form .name-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.wrapper .contact .content .form .name-email .name h1 {
+  font-size: 20px;
+  font-family: "Lato";
+  color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+.wrapper .contact .content .form .name-email .name input {
+  background-color: #f1eeee;
+  width: 200px;
+  height: 35px;
+  border-top: 2px solid black;
+  font-size: 20px;
+}
+
+.wrapper .contact .content .form .name-email .email h1 {
+  font-size: 20px;
+  font-family: "Lato";
+  color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+.wrapper .contact .content .form .name-email .email input {
+  background-color: #f1eeee;
+  width: 200px;
+  height: 35px;
+  border-top: 2px solid black;
+  font-size: 20px;
+}
+
+.wrapper .contact .content .form .message h1 {
+  font-size: 20px;
+  font-family: "Lato";
+  color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+.wrapper .contact .content .form .message #area {
+  background-color: #f1eeee;
+  width: 100%;
+  height: 130px;
+  border-top: 2px solid black;
+  resize: none;
+  font-size: 20px;
+}
+
+.wrapper .contact .content .form .send {
+  font-size: 17px;
+  font-family: "Lato";
+  color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-left: 90%;
+  background-color: white;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.wrapper .contact .content .article {
+  width: 350px;
+  padding: 3px;
+}
+
+.wrapper .contact .content .article .paragraph {
+  font-size: 17px;
+  font-family: "Lato";
+  color: black;
+  letter-spacing: 0.5px;
+}
+
+.wrapper .contact .content .article .author {
+  margin: 40px 0 30px;
+  font-size: 20px;
+  font-family: "Lato";
+  color: black;
+  font-weight: bold;
+}
+
+.wrapper .contact .content .article .icon {
+  width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.wrapper .contact .content .article .icon .img {
+  border: 2px solid black;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  line-height: 80px;
+  -webkit-box-shadow: 0 0 3px black;
+          box-shadow: 0 0 3px black;
+}
+
+.wrapper .contact .content .article .icon .img img {
+  vertical-align: middle;
+  margin: 0 0 55px 8px;
+}
+
+.wrapper .contact .content .article .em {
+  font-size: 17px;
+  font-family: "Lato";
+  color: black;
+}
+
+.wrapper .contact .content .article .em span {
+  font-weight: bold;
+}
+
+.wrapper footer {
+  background-image: url(../img/Background.png);
+  background-size: 100% 100%;
+}
+
+.wrapper footer .footer {
+  max-width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.wrapper footer .footer .binary {
+  width: 60%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.wrapper footer .footer .binary img {
+  width: 150px;
+}
+
+.wrapper footer .footer .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto 20px;
+  width: 30%;
+}
+
+.wrapper footer .footer .tabs a {
+  padding: 5px;
+  text-decoration: none;
+  color: #a4a4a4;
+  font-size: 17px;
+  font-family: "Lato";
+}
+
+.wrapper footer .footer .tabs a:hover {
+  color: #dddcda;
+}
+
+.wrapper footer .footer p {
+  color: #646464;
+  font-size: 16px;
+  font-family: "Lato";
+  margin-bottom: 50px;
 }
 /*# sourceMappingURL=style.css.map */
