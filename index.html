@@ -24,21 +24,21 @@
         <hr>
       </div>
       <div class="button">
-        <a href="" class="read">
+        <a href="" onclick="return false" class="read">
           Read more
         </a>
         <button class="arrow">  
-          <a href=""><img src="img/Arrow-down.png" alt=""></a>
+          <a href="" onclick="return false"><img src="img/Arrow-down.png" alt=""></a>
         </button>
       </div>
     </div>
     </header>
     <div class="about">
       <div class="tabs">
-        <a href="">HOME</a>
-        <a href="">ABOUT US</a>
-        <a href="">PORTFOLIO</a>
-        <a href="">CONTRACT</a>
+        <a href="" onclick="return false">HOME</a>
+        <a href="" onclick="return false">ABOUT US</a>
+        <a href="" onclick="return false">PORTFOLIO</a>
+        <a href="" onclick="return false">CONTRACT</a>
       </div>
       <div class="text">
         <h1>ABOUT</h1>
@@ -72,31 +72,62 @@
       </div>
     </div>
     <div class="portfolio-wrapper">
-      <div class="portfolio" id="port">
+      <div class="portfolio">
         <div class="text">
           <h1>PORTFOLIO</h1>
           <hr>
-          <div class="tabs">
-            <a href="#port" >ALL</a>
-            <a href="#port" >WEB</a>
-            <a href="#port" >APPS</a>
-            <a href="#port" >OTHERS</a>
-          </div>
-        </div>
-        <div class="slider-container">
-          <div class="slider-items"><img src="img/uAzftAKlFWw.jpg" alt=""></div>
-          <div class="slider-items"><img src="img/T38vK7hq-88.jpg" alt=""></div>
-          <div class="slider-items"><img src="img/24UxnzDTXmQ.jpg" alt=""></div>
-          <div class="slider-items"><img src="img/751Mi-colYs.jpg" alt=""></div>
-          <div class="slider-items"><img src="img/DGSlO_74Dkw.jpg" alt=""></div>
-          <div class="slider-items"><img src="img/YmLYTpUVDCo.jpg" alt=""></div>
-          <div class="slider-buttons">
-            <a id="btn-prev"><</a>
-            <a id="btn-next">></a>
+          <div class="content">
+            <div class="tabs">
+              <nav class="tabs-items">
+                <a href="#tabs1" class="tabs-item">ALL</a>
+                <a href="#tabs2" class="tabs-item">WEB</a>
+                <a href="#tabs3" class="tabs-item">APPS</a>
+                <a href="#tabs4" class="tabs-item">OTHERS</a>
+              </nav>
+              <div class="tab-body">
+                <div class="tabs-block1" id="tabs1">
+                  <div class="slider-container">
+                    <div class="slider-items"><img src="img/uAzftAKlFWw.jpg" alt=""></div>
+                    <div class="slider-items"><img src="img/T38vK7hq-88.jpg" alt=""></div>
+                    <div class="slider-items"><img src="img/24UxnzDTXmQ.jpg" alt=""></div>
+                    <div class="slider-items"><img src="img/751Mi-colYs.jpg" alt=""></div>
+                    <div class="slider-items"><img src="img/DGSlO_74Dkw.jpg" alt=""></div>
+                    <div class="slider-items"><img src="img/YmLYTpUVDCo.jpg" alt=""></div>
+                    <div class="slider-buttons">
+                      <a id="btn-prev"><</a>
+                      <a id="btn-next">></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs-block2" id="tabs2">
+                  <div class="img-content">
+                    <div class="img-wrapper"><img src="img/comin1.jpg" alt=""></div>
+                    <div class="img-wrapper"><img src="img/comin2.jpg" alt=""></div>
+                    <div class="img-wrapper"><img src="img/comin3.jpg" alt=""></div>
+                    <div class="img-wrapper"><img src="img/comin4.jpg" alt=""></div>
+                    <div class="img-wrapper"><img src="img/comin5.jpg" alt=""></div>
+                    <div class="img-wrapper"><img src="img/comin6.jpg" alt=""></div>
+                  </div>
+                </div>
+                <div class="tabs-block2" id="tabs3">
+                  <div class="img-content">
+                    <div class="img-wrapper"><img src="img/sao1.jpg" alt=""></div>
+                    <div class="img-wrapper"><img src="img/sao2.jpg" alt=""></div>
+                    <div class="img-wrapper"><img src="img/sao3.jpg" alt=""></div>
+                    <div class="img-wrapper"><img src="img/sao4.jpg" alt=""></div>
+                    <div class="img-wrapper"><img src="img/sao5.jpg" alt=""></div>
+                    <div class="img-wrapper"><img src="img/sao6.jpg" alt=""></div>
+                  </div>
+                </div>
+                <div class="tabs-block2" id="tabs4">
+                  Вкладка 4
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="button">
-          <a href="" class="read">
+          <a href="" onclick="return false" class="read">
             Read more
           </a>
         </div>
@@ -120,14 +151,15 @@
       </div>
       <div class="content">
         <div class="form">
-          <div class="name-email">
+          <form action="mail.php" method="post" target="_blank">
+          <div class="name-email">           
             <div class="name">
               <h1>YOUR NAME</h1>
-              <input type="text" required>
+              <input type="text" name="user_name" required>
             </div>
             <div class="email">
               <h1>YOUR E-MAIL</h1>
-              <input type="email" required>
+              <input type="email" name="user_email" required>
             </div>
           </div>
           <div class="message">
@@ -138,6 +170,7 @@
           </div>
             <input type="submit" value="SEND" class="send">
         </div>
+        </form>
         <div class="article">
           <p class="paragraph">Have an idea for a project? Just looking to 
             explore and see the possibilities?
@@ -162,10 +195,10 @@
           <img src="img/Layer 33 copy 3.png" alt="">
         </div>
         <div class="tabs">
-          <a href="">Home</a>
-          <a href="">Facebook</a>
-          <a href="">Linkedin</a>
-          <a href="">Contact</a>
+          <a href="" onclick="return false">Home</a>
+          <a href="" onclick="return false">Facebook</a>
+          <a href="" onclick="return false">Linkedin</a>
+          <a href="" onclick="return false">Contact</a>
         </div>
         <p>
           © 2015. All Rights Reserved

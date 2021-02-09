@@ -248,22 +248,67 @@
           height: 1px; 
           margin: 25px auto;
         }
-        .tabs{
-          display: flex;
-          justify-content: space-between;
-          width: 300px;
-          margin: auto;
-          a{
-            font-size: 17px;
-            font-family: "Lato";
-            color: black;
-            margin: 8px 0;  
-          }
-          a:hover{
-            color: rgb(141, 110, 110);
+        .content{
+          margin: 0 auto;
+          width: 100%;
+          .tabs{
+            margin: 0 0 50px 0;
+            .tabs-items{
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              .tabs-item{
+                flex: 0 1 15%;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                font-size: 17px;
+                font-family: "Lato";
+                color: black;
+                margin-bottom: 70px;
+              }
+              .tabs-item:hover{
+                color: rgb(141, 110, 110);
+              }
+            }
+            .tab-body{
+              .tabs-block1{
+                padding: 20px;
+                font-size: 18;
+                display: none;
+              }
+              .tabs-block1:target{
+                display: block;
+              }
+              .tabs-block2{
+                padding: 20px;
+                font-size: 18;
+                display: none;
+                .img-content{
+                  display: flex;
+                  flex-direction: row;
+                  flex-wrap: wrap;
+
+                  .img-wrapper{
+                    margin: 0 auto;
+                    padding: 10px;
+                    img{
+                      width: 450px;
+                      height: 100%;
+                      
+                    }
+                  }
+                }
+              }
+              .tabs-block2:target{
+                display: block;
+              }
+            }
           }
         }
-      }
+    }
       .slider-container{
         margin: auto;
         position: relative;
@@ -360,12 +405,12 @@
           height: 65px;
         }
         .a{
-          width: 75px;
-          height: 65px;
+          width: 80px;
+          height: 70px;
         }
         .al{
-          width: 155px;
-          height: 60px;
+          width: 140px;
+          height: 55px;
         }
         img{
           padding: 5px 15px;
