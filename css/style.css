@@ -383,7 +383,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper .portfolio-wrapper .portfolio .text h1 {
-  font-size: 56px;
+  font-size: 53px;
   font-family: "Lato";
   color: black;
   font-weight: bold;
@@ -707,7 +707,7 @@ h1, h2, h3, h4, h5, h6 {
   color: black;
   font-weight: bold;
   letter-spacing: 1px;
-  margin-left: 90%;
+  margin-left: 80%;
   background-color: white;
   cursor: pointer;
   margin-top: 40px;
