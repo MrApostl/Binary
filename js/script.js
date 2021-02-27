@@ -18,3 +18,4 @@ function sliderChange(n){
   }
   sliders[currentSlideIndex].classList.remove("hidden");
 }
+

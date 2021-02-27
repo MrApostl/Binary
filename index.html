@@ -78,14 +78,15 @@
           <hr>
           <div class="content">
             <div class="tabs">
-              <nav class="tabs-items">
-                <a href="#tabs1" class="tabs-item">ALL</a>
-                <a href="#tabs2" class="tabs-item">WEB</a>
-                <a href="#tabs3" class="tabs-item">APPS</a>
-                <a href="#tabs4" class="tabs-item">OTHERS</a>
-              </nav>
-              <div class="tab-body">
-                <div class="tabs-block1" id="tabs1">
+              <ul class="tabsItems">
+                <li class="tabsItem active" data-id="1">ALL</li>
+                <li class="tabsItem" data-id="2">WEB</li>
+                <li class="tabsItem" data-id="3">APPS</li>
+                <li class="tabsItem" data-id="4">OTHERS</li>
+              </ul>
+
+              <div class="output">
+                <section class="tabsBlock active">
                   <div class="slider-container">
                     <div class="slider-items"><img src="img/uAzftAKlFWw.jpg" alt=""></div>
                     <div class="slider-items"><img src="img/T38vK7hq-88.jpg" alt=""></div>
@@ -98,8 +99,8 @@
                       <a id="btn-next">></a>
                     </div>
                   </div>
-                </div>
-                <div class="tabs-block2" id="tabs2">
+                </section>
+                <section class="tabsBlock">
                   <div class="img-content">
                     <div class="img-wrapper"><img src="img/comin1.jpg" alt=""></div>
                     <div class="img-wrapper"><img src="img/comin2.jpg" alt=""></div>
@@ -108,8 +109,8 @@
                     <div class="img-wrapper"><img src="img/comin5.jpg" alt=""></div>
                     <div class="img-wrapper"><img src="img/comin6.jpg" alt=""></div>
                   </div>
-                </div>
-                <div class="tabs-block2" id="tabs3">
+                </section>
+                <section class="tabsBlock">
                   <div class="img-content">
                     <div class="img-wrapper"><img src="img/sao1.jpg" alt=""></div>
                     <div class="img-wrapper"><img src="img/sao2.jpg" alt=""></div>
@@ -118,10 +119,17 @@
                     <div class="img-wrapper"><img src="img/sao5.jpg" alt=""></div>
                     <div class="img-wrapper"><img src="img/sao6.jpg" alt=""></div>
                   </div>
-                </div>
-                <div class="tabs-block2" id="tabs4">
-                  Вкладка 4
-                </div>
+                </section>
+                <section class="tabsBlock">
+                  <div class="img-content">
+                    <div class="img-wrapper"><img src="img/jd1.jpg" alt=""></div>
+                    <div class="img-wrapper"><img src="img/jd2.jpg" alt=""></div>
+                    <div class="img-wrapper"><img src="img/jd3.jpg" alt=""></div>
+                    <div class="img-wrapper"><img src="img/jd4.jpg" alt=""></div>
+                    <div class="img-wrapper"><img src="img/jd5.jpg" alt=""></div>
+                    <div class="img-wrapper"><img src="img/jd6.jpg" alt=""></div>
+                  </div>
+                </section>
               </div>
             </div>
           </div>
@@ -206,5 +214,6 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/openTab.js"></script>
 </body>
 </html>

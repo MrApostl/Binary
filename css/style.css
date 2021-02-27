@@ -360,6 +360,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper .portfolio-wrapper {
+  border: none;
   background-color: #f3f3f3;
 }
 
@@ -407,7 +408,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 50px 0;
 }
 
-.wrapper .portfolio-wrapper .portfolio .text .content .tabs .tabs-items {
+.wrapper .portfolio-wrapper .portfolio .text .content .tabs .tabsItems {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -418,9 +419,11 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-.wrapper .portfolio-wrapper .portfolio .text .content .tabs .tabs-items .tabs-item {
+.wrapper .portfolio-wrapper .portfolio .text .content .tabs .tabsItems .tabsItem {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 15%;
           flex: 0 1 15%;
@@ -439,29 +442,28 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Lato";
   color: black;
   margin-bottom: 70px;
+  background-color: inherit;
 }
 
-.wrapper .portfolio-wrapper .portfolio .text .content .tabs .tabs-items .tabs-item:hover {
+.wrapper .portfolio-wrapper .portfolio .text .content .tabs .tabsItems .tabsItem:hover {
   color: #8d6e6e;
 }
 
-.wrapper .portfolio-wrapper .portfolio .text .content .tabs .tab-body .tabs-block1 {
+.wrapper .portfolio-wrapper .portfolio .text .content .tabs .tabsItems .tabsItem.active {
+  color: #8d6e6e;
+}
+
+.wrapper .portfolio-wrapper .portfolio .text .content .tabs .output {
+  clear: both;
+}
+
+.wrapper .portfolio-wrapper .portfolio .text .content .tabs .tabsBlock {
   padding: 20px;
   font-size: 18;
   display: none;
 }
 
-.wrapper .portfolio-wrapper .portfolio .text .content .tabs .tab-body .tabs-block1:target {
-  display: block;
-}
-
-.wrapper .portfolio-wrapper .portfolio .text .content .tabs .tab-body .tabs-block2 {
-  padding: 20px;
-  font-size: 18;
-  display: none;
-}
-
-.wrapper .portfolio-wrapper .portfolio .text .content .tabs .tab-body .tabs-block2 .img-content {
+.wrapper .portfolio-wrapper .portfolio .text .content .tabs .tabsBlock .img-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -473,17 +475,17 @@ h1, h2, h3, h4, h5, h6 {
       flex-wrap: wrap;
 }
 
-.wrapper .portfolio-wrapper .portfolio .text .content .tabs .tab-body .tabs-block2 .img-content .img-wrapper {
+.wrapper .portfolio-wrapper .portfolio .text .content .tabs .tabsBlock .img-content .img-wrapper {
   margin: 0 auto;
   padding: 10px;
 }
 
-.wrapper .portfolio-wrapper .portfolio .text .content .tabs .tab-body .tabs-block2 .img-content .img-wrapper img {
+.wrapper .portfolio-wrapper .portfolio .text .content .tabs .tabsBlock .img-content .img-wrapper img {
   width: 450px;
   height: 100%;
 }
 
-.wrapper .portfolio-wrapper .portfolio .text .content .tabs .tab-body .tabs-block2:target {
+.wrapper .portfolio-wrapper .portfolio .text .content .tabs .tabsBlock.active {
   display: block;
 }
 
