@@ -917,6 +917,12 @@ h1, h2, h3, h4, h5, h6 {
     border-top: 2px solid black;
     font-size: 20px;
   }
+  .wrapper .portfolio-wrapper .portfolio .slider-container {
+    position: relative;
+    padding-bottom: 100%;
+    width: 100%;
+    margin: 0;
+  }
   .wrapper .contact .content .form .name-email .name {
     width: 100%;
   }
