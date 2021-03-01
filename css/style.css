@@ -422,6 +422,8 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   cursor: pointer;
 }
 
@@ -950,6 +952,24 @@ h1, h2, h3, h4, h5, h6 {
     background-color: white;
     cursor: pointer;
     margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .portfolio-wrapper .portfolio .text h1 {
+    font-size: 43px;
+    font-family: "Lato";
+    color: black;
+    font-weight: bold;
+    letter-spacing: 7px;
+  }
+  .wrapper header .header .infa .p1 {
+    font-size: 40px;
+    font-family: "Lato";
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
   }
 }
 /*# sourceMappingURL=style.css.map */
