@@ -669,21 +669,36 @@
 }
 @media screen and (max-width: 600px){
   .wrapper .portfolio-wrapper .portfolio .text h1 {
-    font-size: 43px;
+    font-size: 40px;
     font-family: "Lato";
     color: black;
     font-weight: bold;
     letter-spacing: 7px;
   }
-  .wrapper .contact .text h1 {
+  .wrapper .about .text h1 {
     font-size: 40px;
     font-family: "Lato";
     color: black;
     font-weight: bold;
     letter-spacing: 7px;
 }
+.wrapper .about .tabs a{
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-family: "Lato";
+  font-weight: bold;
+}
+  .wrapper .contact .text h1 {
+    font-size: 35px;
+    font-family: "Lato";
+    color: black;
+    font-weight: bold;
+    letter-spacing: 7px;
+}
   .wrapper header .header .infa .p1 {
-    font-size: 40px;
+    font-size: 35px;
     font-family: "Lato";
     color: white;
     text-transform: uppercase;
@@ -706,21 +721,36 @@
 }
 @media screen and (max-width: 400px){
   .wrapper .portfolio-wrapper .portfolio .text h1 {
-    font-size: 33px;
+    font-size: 30px;
     font-family: "Lato";
     color: black;
     font-weight: bold;
     letter-spacing: 7px;
   }
-  .wrapper .contact .text h1 {
+  .wrapper .about .tabs a{
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-family: "Lato";
+    font-weight: bold;
+  }
+  .wrapper .about .text h1 {
     font-size: 30px;
     font-family: "Lato";
     color: black;
     font-weight: bold;
     letter-spacing: 7px;
 }
+  .wrapper .contact .text h1 {
+    font-size: 25px;
+    font-family: "Lato";
+    color: black;
+    font-weight: bold;
+    letter-spacing: 7px;
+}
   .wrapper header .header .infa .p1 {
-    font-size: 30px;
+    font-size: 25px;
     font-family: "Lato";
     color: white;
     text-transform: uppercase;
