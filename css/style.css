@@ -971,5 +971,65 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     letter-spacing: 3px;
   }
+  .wrapper .portfolio-wrapper .portfolio .text .content .tabs .tabsItems .tabsItem {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 20%;
+            flex: 0 1 20%;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: "Lato";
+    color: black;
+    margin-bottom: 70px;
+    background-color: inherit;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .wrapper .portfolio-wrapper .portfolio .text h1 {
+    font-size: 33px;
+    font-family: "Lato";
+    color: black;
+    font-weight: bold;
+    letter-spacing: 7px;
+  }
+  .wrapper header .header .infa .p1 {
+    font-size: 30px;
+    font-family: "Lato";
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+  .wrapper .portfolio-wrapper .portfolio .text .content .tabs .tabsItems .tabsItem {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 20%;
+            flex: 0 1 20%;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: "Lato";
+    color: black;
+    margin-bottom: 70px;
+    background-color: inherit;
+  }
 }
 /*# sourceMappingURL=style.css.map */
